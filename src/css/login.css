@@ -59,8 +59,8 @@ section .signin{
     justify-content: center;
     align-items: center;
     padding: 40px;
-    border-radius: 5px;
-  
+    border-radius: 1em;
+    box-shadow: 0 0.140em 1em rgb(227, 227, 44);
 }
 
 section .signin .Permbajtja{
