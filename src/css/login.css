@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root{
+    --text-color:#ffff;
+    --section-color:#303030;
+    --hover-color:#fdd037;
+    --background-color:#1B1C1E;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+section span:hover{
+    background: var(--hover-color);
+    transition: 0s;
+}
+section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--background-color),var(--hover-color),var(--background-color));
+}
+section span{
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);;
+    background: var(--background-color);
+    z-index: 2;
+    transition: 1.5s;
+}
+section .signin{
+    position: absolute;
+    width: 400px;
+    background: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 5px;
+  
+}
+
+section .signin .Permbajtja{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+section .signin .Permbajtja h2{
+    font-size: 2em;
+    color: var(--hover-color);
+    text-transform: uppercase;
+}
+section .signin .Permbajtja .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+section .signin .Permbajtja .form .inputBx{
+    position: relative;
+    width: 100%;
+}
+section .signin .Permbajtja .form .inputBx input{
+    position: relative;
+    width: 100%;
+    background: var(--section-color);
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 5px;
+    color: var(--hover-color);
+    font-weight: 500;
+    font-size: 1em;
+}
+section .signin .Permbajtja .form .inputBx i{
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: var(--hover-color);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.signin .Permbajtja .form .inputBx input:focus ~i,
+.signin .Permbajtja .form .inputBx input:valid ~i{
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+.signin .Permbajtja .form .links{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin .Permbajtja .form .links a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+.signin .Permbajtja .form .links a:nth-child(2){
+    color: var(--hover-color);
+    font-weight: 600;
+  }
+  .signin .Permbajtja .form .inputBx input[type="submit"]{
+    padding: 10px;
+    background: var(--section-color);
+    font-weight: 600;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
