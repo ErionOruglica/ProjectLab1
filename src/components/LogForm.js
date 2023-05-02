@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+
 import {useForm} from 'react-hook-form';
 import * as yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup';
@@ -17,15 +17,10 @@ export const Form = () => {
     console.log(data);
   };
 
-  useEffect(() => {
-    for (let i = 0; i < 190; i++) {
-      const span = document.createElement('span');
-      document.getElementById('section').appendChild(span);
-    }
-  }, []);
+
 
   return (
-    <section id='section'>
+    <div className='section'>
       <div className="signin">
         <div className="Permbajtja">
           <h2>Kyçu</h2>
@@ -50,6 +45,6 @@ export const Form = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
