@@ -1,9 +1,8 @@
 import React from 'react'
-import './home.css'
+import '../css/home.css';
 import img1 from '../imgs/home-img4.jpg'
 import img2 from '../imgs/home-img10.jpg'
 import img3 from '../imgs/home-img11.jpg'
-import Footer from '../components/Footer'
 
 const Home = () => {
   return (
