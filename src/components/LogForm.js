@@ -40,7 +40,7 @@ export const Form = () => {
               <a href="#">Nuk keni llogari?</a>
             </div>
             <div className="inputBx">
-              <input type="submit" value="Kyçu" />
+              <input type="submit" value="Kyçu"  />
             </div>
           </form>
         </div>

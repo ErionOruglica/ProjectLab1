@@ -13,7 +13,6 @@
     font-family: "Raleway", sans-serif;
 }
 body{
-
     background-color: var(--background-color);
     overflow: hidden;
 }
@@ -26,7 +25,7 @@ div .section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background: linear-gradient(338deg, rgba(22,22,22,1) 0%, rgba(24,24,24,1) 44%, rgba(79,81,47,1) 100%)
 }
 div .signin{
     width: 40%;
@@ -114,6 +113,7 @@ div .signin .Permbajtja .form .inputBx i{
     letter-spacing: 0.05em;
     cursor: pointer;
   }
+
 p{
     color:var(--text-color);
     text-align: center;
